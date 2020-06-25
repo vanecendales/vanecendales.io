@@ -11,7 +11,7 @@ app.config(function($translateProvider) {
 		TITLE_ABOUT: 'About me',
 		MESSAGE_ABOUT: 'About Vanessa Cendales´s life',
 		CONTENT_ABOUT: 'Graphic Designer graduated from Jorge Tadeo Lozano University. Im 36 and i born in Cali-Colombia, im a code-fan/code-lover, i think the code is perfect, or it could be if its well done. DESIGN  is who i am, my style and my way who i see the life. I Love sports and nature, and i try to integrate it to my dialy live. And Finally i love my job, investigate all days and be better every day, thats our real value like humans.',
-		CONTENT_ABOUT1: 'My professional profile is focus on client´s side develop, (html5-js-css3); frontend development of websites, intranets, apps, plugins, modules based on JS y PHP. I have more than 6 years of knowelgde and experience working under SEO development standars, organic optimization on search spiders like google or yahoo.',
+		CONTENT_ABOUT1: 'My professional profile is focus on client´s side develop, (html5-js-css3); frontend development of websites, intranets, apps, plugins, modules based on JS (vanilla JS, jquery, angular 2.0) y PHP(focus on Cms like wordpress or magento). I have more than 6 years of knowelgde and experience working under SEO development standars, organic optimization on search spiders like google or yahoo.',
 
 /*SKILLS*/
 		TITLE_SKILLS: 'Skills',
@@ -74,7 +74,7 @@ app.config(function($translateProvider) {
 		TITLE_ABOUT: 'bio',
 		MESSAGE_ABOUT: 'Un poco acerca de mi',
 		CONTENT_ABOUT: 'Diseñadora Grafica egresada de la U. Jorge Tadeo Lozano. tengo 35 años nací en Cali, Me gusta el código porque es perfecto, o puede llegar a serlo. EL Diseño es lo que soy, es mi estilo y mi forma de ver la vida. Amo el deporte y la naturaleza y trato de mezclarlos en mi vida diaria. Y Amo mi trabajo, investigar y ser mejor, en eso radica nuestro valor como personas.',
-		CONTENT_ABOUT1: 'Mi perfil Laboral es enfocado al desarrollo del lado del cliente; diseño y programación frontend. de páginas, intranets, aplicaciones, plugins, apps, basados en JS y PHP. Cuento con conocimiento y mas de 6 años de experiencia trabajando bajo estándares de SEO para optimización organica en buscadores, tanto en el desarrollo como en el sostenimiento del proyecto. Mi fuerte es la Maquetacion en html5, adecuacion de esticlos con less, ',
+		CONTENT_ABOUT1: 'Mi perfil Laboral es enfocado al desarrollo del lado del cliente; diseño y programación frontend. de páginas, intranets, aplicaciones, plugins, apps, basados en JS (js vanilla, jquery, angular 2.0) y PHP(enfocado a CMS como wordpress o magento). Cuento con conocimiento y mas de 6 años de experiencia trabajando bajo estándares de SEO para optimización organica en buscadores, tanto en el desarrollo como en el sostenimiento del proyecto. Mi fuerte es la Maquetacion en html5, adecuacion de esticlos con less, ',
 
 /*SKILLS*/
 		TITLE_SKILLS: 'habilidades',

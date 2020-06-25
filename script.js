@@ -51,7 +51,7 @@ app.config(function($translateProvider) {
 		WORK_8: 'Official site of de INTERNEXA Colombia, developed under Sharepoint 365, the full work consist in full design - full layout and basic development in html, js y css. Masterpage realizada con bootstrap y angular',
 
 /*CONTACT*/
-		TITLE_CONTACT: 'CONTACT ME',
+		TITLE_CONTACT: 'Contact Me',
 		MESSAGE_CONTACT: 'Write me a line ;)',	
         ADDRESS: 'Write me a line ;)',	
         ADDRESS: 'Address:',	

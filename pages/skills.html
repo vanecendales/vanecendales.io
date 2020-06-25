@@ -1,0 +1,203 @@
+<style>
+  .step3 .correlate-bloc:nth-child(4) .mini-planet {
+    -webkit-transform: scale(0.3)!important;
+    -ms-transform: scale(0.3)!important;
+}
+.step3 .correlate-bloc:nth-child(1) .mini-planet {
+    -webkit-transform: scale(0.8)!important;
+    -ms-transform: scale(0.8)!important;
+}
+.step4 .rocket-container {
+    top: 20px!important;
+    -webkit-animation: rocket-appear 1.5s linear forwards;
+    animation: rocket-appear 1.5s linear forwards;
+    left: 57px!important;
+}
+.step3 .correlate-bloc:nth-child(1) .mini-planet a.menu_title {
+    color: #fff;
+    padding-left: 70px;
+}
+
+.col-texto {
+    position: fixed;
+    top: 30%;
+}
+
+</style>
+    <script>
+        $(document).ready(function () {
+
+            var dict = {
+                'HTML': ['VisualCode, Sublime', 90],
+                'CSS': ['CSS3, Less, Sass', 90],
+                'JS': ['Node, Angular, Vue, MongoDB', 65],
+                'Jquery': ['', 75],
+                'GIT': ['GitHub - terminal', 100],
+                'CMS': ['Wordpress, Drupal, Magento, Joomla', 90],
+                'Shareponint': ['master, plugins, vistas, listas', 60],
+                'PHP': ['', 65],
+                'UI UX': ['Illsutrator, Photoshop, Sketch, Figma, Invision', 80],
+            };
+
+            var heightX = findlargest(dict);
+            parseData(dict, heightX);
+
+        });
+
+
+        function findlargest(dict) {
+            var heightX = 0;
+            for (var k in dict) {
+                if (dict.hasOwnProperty(k)) {
+                    if (heightX < dict[k][1]) {
+                        heightX = dict[k][1];
+                    }
+                }
+            }
+            return heightX ;
+        }
+
+
+
+
+        function parseData(dict, heightX) {
+            var string = '';
+
+            for (var k in dict) {
+                if (dict.hasOwnProperty(k)) {
+                    var $temp = $('<div>').addClass('pyramid-chart');
+
+                    $temp.append('<h3>' + k + '</h3>');
+                    $temp.append('<label>' + dict[k][0] + '</label>');
+                    $temp.append('<div class="pyramid"><span data-height="' +(dict[k][1]* 2) + '"></span><span data-height="' + (dict[k][1]* 2) + '"></span></div>');
+                    $temp.append('<label class="desc">' + dict[k][1] + '</label>');
+
+
+                    $temp.appendTo('#chart');
+
+                    moveit($temp.find('.pyramid span'), dict[k][1], heightX);
+                }
+
+            }
+
+        }
+
+
+
+
+
+        function moveit($ele, $endX, heightX) {
+            $endX = $ele.attr('data-height');
+
+            var i = 0,
+
+                id = setInterval(function () {
+                    $ele.css({
+                        'border-top': i + 'px solid transparent',
+                        'margin-top': heightX - 40 - i + 'px'
+                    });
+
+
+                    i++;
+
+                    if (i > $endX) {
+                        clearInterval(id)
+                    }
+
+                }, 20);
+        }
+    </script>
+
+    <div class="containe-info">
+        <div class="">
+            <h1 class="title_ fancy_title">  {{ 'TITLE_SKILLS' | translate }}</h1>
+             <p style="text-align:right">{{ 'MESSAGE_SKILLS' | translate }}</p>
+            <div class="col-md-12 col-texto animated bounceInLeft">
+                <div id="chart">
+                </div>
+            </div>
+
+            <button onclick="goBack()" class="volver"><</button>
+            <script>
+                function goBack() {
+                    window.history.back();
+                }
+         </script>
+          <div class="slide" id="slide1">
+    <div class="anim step5">
+      <div class="planet">
+        <div class="ending-wrapper">
+        </div>
+        <div class="satellite-scan-wrapper">
+          <div class="satellite-wrapper">
+            <div class="satellite"></div>
+            <div class="scanning">
+              <div class="scan"></div>
+              <div class="scan"></div>
+            </div>
+            <div class="correlate">
+
+              <div class="correlate-bloc">
+                <div class="correlation"></div>
+                <div class="mini-planet"><a href="/#/about" class="menu_title">{{ 'TITLE_ABOUT' | translate }}</a></div>
+              </div>
+
+            <div class="correlate-bloc">
+              <div class="correlation"></div>
+              
+              <div class="mini-planet"><a href="#/contact" class="menu_title">{{ 'TITLE_CONTACT' | translate }}</a></div>
+            </div>
+
+            <div class="correlate-bloc">
+              <div class="correlation"></div>
+              
+              <div class="mini-planet"><a href="/#/work" class="menu_title">{{ 'TITLE_WORK' | translate }}</a></div>
+            </div>
+            <div class="correlate-bloc">
+              <div class="correlation"></div>
+              
+              <div class="mini-planet"><a href="index.html" class="menu_title">{{ 'TITLEMENU_HOME' | translate }}</a></div>
+            </div>
+
+
+            <div class="rocket-container">
+              <div class="rocket"></div>
+              <div class="fire-container">
+                <div class="firepit">
+                  <div class="fire">
+                    <div class="flame"></div>
+                    <div class="flame"></div>
+                    <div class="flame"></div>
+                    <div class="flame"></div>
+                    <div class="spark"></div>
+                    <div class="spark"></div>
+                    <div class="spark"></div>
+                    <div class="spark"></div>
+                    <div class="spark"></div>
+                    <div class="spark"></div>
+                    <div class="spark"></div>
+                    <div class="spark"></div>
+                    <div class="spark"></div>
+                    <div class="spark"></div>
+                    <div class="spark"></div>
+                    <div class="spark"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="planet-circles">
+        <div class="planet-circle"></div>
+        <div class="planet-circle"></div>
+      </div>
+    </div>
+        </div>
+       
+    </div>
+</body>
+
+</html>

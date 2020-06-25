@@ -137,35 +137,35 @@ app.config(function ($routeProvider) {
 
 		// route for the home page
 		.when('/', {
-			templateUrl: 'vanecendales.io/pages/home.html',
+			templateUrl: 'pages/home.html',
 			controller: 'mainController'
 		})
 
 		// route for the home page
 		.when('/skills', {
-			templateUrl: 'vanecendales.io/pages/skills.html',
+			templateUrl: 'pages/skills.html',
 			controller: 'skillsController'
 		})
 		// route for the home page
 		.when('/study', {
-			templateUrl: 'vanecendales.io/pages/study.html',
+			templateUrl: 'pages/study.html',
 			controller: 'studyController'
 		})
 
 		// route for the home page
 		.when('/work', {
-			templateUrl: 'vanecendales.io/pages/work.html',
+			templateUrl: 'pages/work.html',
 			controller: 'workController'
 		})
 		// route for the about page
 		.when('/about', {
-			templateUrl: 'vanecendales.io/pages/about.html',
+			templateUrl: 'pages/about.html',
 			controller: 'aboutController'
 		})
 
 		// route for the contact page
 		.when('/contact', {
-			templateUrl: 'vanecendales.io/pages/contact.html',
+			templateUrl: 'pages/contact.html',
 			controller: 'contactController'
 		});
 

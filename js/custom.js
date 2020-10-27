@@ -71,20 +71,20 @@ Assigned to: ThemeForest
 		});
 		var circle2 = Circles.create({
 			id: 'circles-2',
-			value: 80,
+			value: 50,
 			radius: 100,
-			number: 80,
-			text: '80%',
+			number: 50,
+			text: '50%',
 			width: 8,
 			colors: ["#202020", "#ff8511"],
 			duration: 900
 		});
 		var circle3 = Circles.create({
 			id: 'circles-3',
-			value: 75,
+			value: 80,
 			radius: 100,
-			number: 75,
-			text: '75%',
+			number: 80,
+			text: '80%',
 			width: 8,
 			colors: ["#202020", "#f26525"],
 			duration: 900

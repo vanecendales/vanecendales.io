@@ -1,0 +1,376 @@
+<style>
+  .step3 .correlate-bloc:nth-child(4) .mini-planet {
+    -webkit-transform: scale(0.3)!important;
+    -ms-transform: scale(0.3)!important;
+}
+.step3 .correlate-bloc:nth-child(3) .mini-planet {
+    -webkit-transform: scale(0.8)!important;
+    -ms-transform: scale(0.8)!important;
+}
+.step4 .rocket-container {
+    top: -47px!important;
+    -webkit-animation: rocket-appear 1.5s linear forwards;
+    animation: rocket-appear 1.5s linear forwards;
+    left: 157px!important;
+}
+.step3 .correlate-bloc:nth-child(3) .mini-planet a.menu_title {
+    color: #fff;
+    padding-left: 70px;
+}
+
+
+</style>
+<script>
+    $('.gallery ul li a').click(function () {
+        var itemID = $(this).attr('href');
+        $('.gallery ul').addClass('item_open');
+        $(itemID).addClass('item_open');
+        return false;
+    });
+    $('.close').click(function () {
+        $('.port, .gallery ul').removeClass('item_open');
+        return false;
+    });
+
+    $(".gallery ul li a").click(function () {
+        $('html, body').animate({
+            scrollTop: parseInt($("#top").offset().top)
+        }, 400);
+    });
+
+</script>
+<div class="container-info" >
+    <div class="row-gallery">
+       <div>
+        <h1 class="title_ fancy_title">  {{ 'TITLE_WORK' | translate }}</h1>
+       <p style="text-align:right">{{ 'MESSAGE_WORK' | translate }}</p>
+    </div>
+            <div class="col-sm-12 animate bounceInLeft">
+            <section class="gallery">
+                <div class="">
+                    <ul>
+                        <a href="#" class="close">x</a>
+                        <li>
+                            <a href="#conexa">
+					<img src="img/work/conexa_s.jpg" alt="Conexa">
+				</a>
+                        </li>
+
+                        <li>
+                            <a href="#me">
+					<img src="img/work/me_s.jpg" alt="">
+				</a>
+                        </li>
+                        <li>
+                            <a class="image" href="#internexa">
+					<img src="img/work/internexaWeb_s.jpg" alt="">
+				</a>
+                        </li>
+                        <li>
+                            <a href="#far" class="image">
+					<img src="img/work/far_s.jpg" alt="">
+				</a>
+                        </li>
+                        <li>
+                            <a href="#mtravel" class="image">
+					<img src="img/work/mtravel_s.jpg" alt="">
+				</a>
+                        </li>
+                        <li>
+                            <a class="image" href="#tuorden">
+					<img src="img/work/tuorden_s.jpg" alt="">
+				</a>
+                        </li>
+                        
+                        <li>
+                            <a class="image" href="#inv">
+					<img src="img/work/inv_s.jpg" alt="">
+				</a>
+                        </li>
+                        <li>
+                            <a class="image" href="#emecol">
+					<img src="img/work/eduac_s.jpg" alt="">
+				</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- / row -->
+
+                <!-- Item 01 -->
+                <div id="conexa" class="port">
+                    <div class="description">
+                        <h1>Conexa</h1>
+                        <div class="tags">
+                            <li>Sharepoint 365</li>
+                            <li>Bootstrap 3.0</li>
+                            <li>JQuery</li>
+                            <li>CSS3</li>
+                        </div>
+                      
+                        <div class="nivel">
+                            <p><strong> {{ 'DESIGN' | translate }}</strong>100% </p>
+                            <p><strong>{{ 'LAYOUT' | translate }}</strong>100% </p>
+                            <p><strong>{{ 'DEVELOP' | translate }} Sharepoint & JS:</strong>20% </p>
+                        </div>
+                        
+                        <p>{{ 'WORK_1' | translate }} </p>
+                        <div class="links_button">
+                            <a href="https://www.behance.net/gallery/105391759/internexa" target="_blank">Intranet</a>
+                        </div>
+                    </div>
+                    <img src="img/work/conexa.jpg" alt="Conexa">
+                </div>
+                <!-- / Item 02 -->
+
+                <!-- Item 02 -->
+                <div id="me" class="port">
+                    <div class="description">
+                        <h1>Web Personal Anterior</h1>
+                        <div class="tags">
+                            <li>HTML</li>
+                            <li>CSS3</li>
+                            <li>Javascript</li>
+                            <li>Diseño Web</li>
+                            <li>OnePage</li>
+                            <li>Horizontal Scroll</li>
+                        </div>
+                       <div class="nivel">
+                            <p><strong>{{ 'DESIGN' | translate }}</strong>100% </p>
+                            <p><strong>{{ 'LAYOUT' | translate }}</strong>100% </p>
+                            <p><strong>{{ 'DEVELOP' | translate }} JS:</strong>100% </p>
+                        </div>
+                        <p>{{ 'WORK_2' | translate }}</p>
+                        <div class="links_button">
+                            <a href="/anterior" target="_blank">vanecendales.github.io</a>
+                        </div>
+                    </div>
+                    <img src="img/work/me.jpg" alt="yo">
+                </div>
+
+                <div id="far" class="port">
+                    <div class="description">
+                        <h1>FAR International</h1>
+                        <div class="tags">
+                            <li>Wordpress</li>
+                            <li>PHP</li>
+                            <li>HTML</li>
+                            <li>Liquid</li>
+                            <li>Diseño web</li>
+                            <li>Email Marketing</li>
+                            <li>Office Signatures</li>
+                        </div>
+                       <div class="nivel">
+                            <p><strong>{{ 'DESIGN' | translate }}</strong>10% </p>
+                            <p><strong>{{ 'LAYOUT' | translate }}</strong>100% </p>
+                            <p><strong>{{ 'DEVELOP' | translate }} PHP</strong>20% </p>
+                        </div>
+                        <p>{{ 'WORK_3' | translate }}</p>
+                       
+                            <div class="links_button">
+                                <a href="http://www.farinternational.com/" target="_blank">farinternational.com</a>
+                            </div>
+                            
+                       
+                    </div>
+                    <img src="img/work/far.jpg" alt="Far International">
+                </div>
+
+                <div id="mtravel" class="port">
+                    <div class="description">
+                        <h1>Medellín Travel</h1>
+                        <div class="tags">
+                            <li>HMTL</li>
+                            <li>Bootstrap 3.0</li>
+                            <li>JQuery</li>
+                            <li>CSS3</li>
+                        </div>
+                       <div class="nivel">
+                            <p><strong>{{ 'DESIGN' | translate }}</strong>0% </p>
+                            <p><strong>{{ 'LAYOUT' | translate }}</strong>100% </p>
+                            <p><strong>{{ 'DEVELOP' | translate }} JS:</strong>20% </p>
+                        </div>
+                        <p>{{ 'WORK_4' | translate }}.</p>
+                        <div class="links_button">
+                           
+                            <a href="https://medellin.travel" target="_blank">medellin.travel</a>
+                        </div>
+                    </div>
+                    <img src="img/work/mtravel.jpg" alt="Medellin travel">
+                </div>
+
+                <div id="tuorden" class="port">
+                    <div class="description">
+                        <h1>Tu Orden Express</h1>
+                        <div class="tags">
+                            <li>HTML</li>
+                            <li>Bootstrap 3.0</li>
+                            <li>JQuery</li>
+                            <li>CSS3</li>
+                        </div>
+                       <div class="nivel">
+                            <p><strong>{{ 'DESIGN' | translate }}</strong>0% </p>
+                            <p><strong>{{ 'LAYOUT' | translate }}</strong>100% </p>
+                            <p><strong>{{ 'DEVELOP' | translate }} Sharepoint & JS:</strong>10% </p>
+                        </div>
+                        <p>{{ 'WORK_5' | translate }}</p>
+                        <div class="links_button">
+                           
+                            <a href="https://www.facebook.com/tuordenexpresscol/" target="_blank">tuordenexpress.com (not available)</a>
+                        </div>
+                    </div>
+                    <img src="img/work/tuorden.jpg" alt="Tu Orden Express">
+                </div>
+
+                <div id="inv" class="port">
+                    <div class="description">
+                        <h1>Invitación  para Boda por whatsapp</h1>
+                        <div class="tags">
+                            <li>HTML</li>
+                            <li>Animate.css</li>
+                            <li>CSS3</li>
+                        </div>
+                       <div class="nivel">
+                            <p><strong>{{ 'DESIGN' | translate }}</strong>100% </p>
+                            <p><strong>{{ 'LAYOUT' | translate }}</strong>100% </p>
+                            <p><strong>{{ 'DEVELOP' | translate }} Sharepoint & JS:</strong>20% </p>
+                        </div>
+                        <p>{{ 'WORK_6' | translate }}</p>
+                          <div class="links_button">
+                               <a href="#/sandra&oscar/" target="_blank">sandrayoscar.com</a>
+                            </div>
+                       
+                    </div>
+                    <img src="img/work/inv.jpg" alt="Invitacion">
+                </div>
+
+                <div id="emecol" class="port">
+                    <div class="description">
+                        <h1>Eduac</h1>
+                        <div class="tags">
+                            <li>Vue JS</li>
+                            <li>HTML5</li>
+                            <li>JQuery</li>
+                            <li>LESS</li>
+                        </div>
+                       <div class="nivel">
+                            <p><strong>{{ 'DESIGN' | translate }}</strong>100% </p>
+                            <p><strong>{{ 'LAYOUT' | translate }}</strong>100% </p>
+                        </div>
+                        <p>{{ 'WORK_7' | translate }}</p>
+                        <div class="links_button">
+                            <a href="http://eduac.com/" target="_blank">eduac.com</a>
+                            
+                        </div>
+                    </div>
+                    <img src="img/work/eduac.jpg" alt="Conexa">
+                </div>
+
+                <div id="internexa" class="port">
+                    <div class="description">
+                    <h1>Internexa</h1>                 
+                        <div class="tags">
+                            <li>Sharepoint 365</li>
+                            <li>Bootstrap 3.0</li>
+                            <li>JQuery</li>
+                            <li>CSS3</li>
+                        </div>
+                      
+                        <div class="nivel">
+                            <p><strong>{{ 'DESIGN' | translate }}</strong>100% </p>
+                            <p><strong>{{ 'LAYOUT' | translate }}</strong>100% </p>
+                            <p><strong>{{ 'DEVELOP' | translate }} Sharepoint & JS:</strong>20% </p>
+                        </div>
+                        
+                        <p>{{ 'WORK_8' | translate }}</p>
+                        
+                        <div class="links_button">
+                            <a href="http://invis.io/MNAZ3I7X4" target="_blank">Boceto Final</a>
+                        </div>
+              </div>
+                    <img src="img/work/internexaWeb.jpg" alt="Conexa">
+                </div>
+
+
+               
+        </div>
+        </section>
+        <!-- / projects -->
+
+
+    </div>
+
+     <div class="slide" id="slide1">
+    <div class=" step0  step2 step3 step4 step5">
+      <div class="planet">
+        <div class="ending-wrapper">
+        </div>
+        <div class="satellite-scan-wrapper">
+          <div class="satellite-wrapper">
+            <div class="satellite"></div>
+            <div class="scanning">
+              <div class="scan"></div>
+              <div class="scan"></div>
+            </div>
+            <div class="correlate">
+
+                <div class="correlate-bloc">
+                    <div class="correlation"></div>
+                    <div class="mini-planet"><a href="#/about.html" class="menu_title">{{ 'TITLE_ABOUT' | translate }}</a></div>
+                  </div>
+    
+                <div class="correlate-bloc">
+                  <div class="correlation"></div>
+                  
+                  <div class="mini-planet"><a href="#/contact" class="menu_title">{{ 'TITLE_CONTACT' | translate }}</a></div>
+                </div>
+    
+                <div class="correlate-bloc">
+                  <div class="correlation"></div>
+                  
+                  <div class="mini-planet"><a href="/#/work" class="menu_title">{{ 'TITLE_WORK' | translate }}</a></div>
+                </div>
+                <div class="correlate-bloc">
+                  <div class="correlation"></div>
+                  
+                  <div class="mini-planet"><a href="/index" class="menu_title">{{ 'TITLEMENU_HOME' | translate }}</a></div>
+                </div>
+
+
+            <div class="rocket-container">
+              <div class="rocket"></div>
+              <div class="fire-container">
+                <div class="firepit">
+                  <div class="fire">
+                    <div class="flame"></div>
+                    <div class="flame"></div>
+                    <div class="flame"></div>
+                    <div class="flame"></div>
+                    <div class="spark"></div>
+                    <div class="spark"></div>
+                    <div class="spark"></div>
+                    <div class="spark"></div>
+                    <div class="spark"></div>
+                    <div class="spark"></div>
+                    <div class="spark"></div>
+                    <div class="spark"></div>
+                    <div class="spark"></div>
+                    <div class="spark"></div>
+                    <div class="spark"></div>
+                    <div class="spark"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="planet-circles">
+        <div class="planet-circle"></div>
+        <div class="planet-circle"></div>
+      </div>
+    </div>
+</div>
+
+</div>

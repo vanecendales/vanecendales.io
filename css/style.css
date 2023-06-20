@@ -714,6 +714,10 @@ input:focus, textarea:focus, select:focus, button:focus {
     width: calc(100% - 230px);
 	padding-left:30px;
 }
+.prt_about_experience_info > ul > li {
+    font-size: 14px;
+    margin: 10px 0;
+}
 .prt_about_experience_info h4{
 	font-size:18px;
 	text-transform:capitalize;

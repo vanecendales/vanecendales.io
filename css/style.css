@@ -186,12 +186,15 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 /*---------- Button css End -------*/
 .prt_btn{
-    color: #fd0c5d;
+    color: #ff3800;
     font-size: 13px;
     font-weight: 800;
     border-radius: 0px;
     outline: none;
     cursor: pointer;
+    background: white;
+    padding: 5px 10px;
+    border-radius: 30px;
 }
 .prt_btn:hover, .prt_btn:focus{
 
@@ -250,6 +253,25 @@ input:focus, textarea:focus, select:focus, button:focus {
     display: grid;
     grid-template-columns: 3fr 1fr 1fr;
     margin-bottom: 50px;
+    align-items: center;
+}
+.prt_logo_wrapper> .social-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.prt_logo_wrapper> .social-links > a{
+    background: white;
+    color: #ff3800;
+    text-align: center;
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    display: block;
+    margin-left: 1em;
+    font-size: 24px;
 }
 @-webkit-keyframes rotate {
   100% {
@@ -360,7 +382,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 .prt_about_img img{
 	
 }
-/* ignore this bit, just some styling */
+
 
 .description ul {
     list-style: none;
@@ -372,16 +394,22 @@ input:focus, textarea:focus, select:focus, button:focus {
     display: block;
     padding: .5em 1em;
   }
+
+  .description li > p > i {
+    margin-bottom: 10px;
+    margin-right: 5px;
+    width: 20px;
+    text-align: center;
+}
   li.button-pdf, :checked + ul > li.button-pdf {
     display: grid!important;
-    grid-template-columns: 2.7fr 1fr;
+    grid-template-columns: 2fr 1fr;
     align-items: start;
 }
 
 .description h4, .description h2 {
     margin:0px;
 }
-  /* this is the clever bit :) */
   
   /* hide checkbox and links */
   #show-more,
@@ -405,6 +433,7 @@ input:focus, textarea:focus, select:focus, button:focus {
   :checked + ul .toggle .less {
     display: inline;
     pointer-events:none;
+    color: black;
   }
   
   /* if show more used, well, show more */
@@ -474,7 +503,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 .prt_about_learnbox_right:hover:after{
 	background-color: #ffffff;
-    border: 3px solid #fd0c5d;
+    border: 3px solid #ff3800;
 	-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
@@ -512,7 +541,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 .prt_about_learnbox_left:hover:after{
 	background-color: #ffffff;
-    border: 3px solid #fd0c5d;
+    border: 3px solid #ff3800;
 	-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
@@ -520,7 +549,7 @@ input:focus, textarea:focus, select:focus, button:focus {
     transition: all 0.3s;
 }
 .prt_about_learnbox_right:hover .prt_about_learnbox_year h1{
-	color:#fd0c5d;
+	color:#ff3800;
 	-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
@@ -528,7 +557,7 @@ input:focus, textarea:focus, select:focus, button:focus {
     transition: all 0.3s;
 }
 .prt_about_learnbox_left:hover .prt_about_learnbox_year h1{
-	color:#fd0c5d;
+	color:#ff3800;
 	-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
@@ -650,7 +679,7 @@ input:focus, textarea:focus, select:focus, button:focus {
     transition: all 0.3s;
 }
 .prt_about_experiencebox:hover .prt_about_experience_year h1{
-	color:#fd0c5d;
+	color:#ff3800;
 	-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
@@ -690,12 +719,22 @@ input:focus, textarea:focus, select:focus, button:focus {
 	text-transform:capitalize;
 	margin-top:0px;
 }
-.prt_about_experience_info span{
-	display:inline-block;
-	width:100%;
+
+.prt_about_experience_info span {
+    display: inline-block;
+    background: #bbb;
+    padding: 3px 10px;
+    margin: 5px 5px 5px 0;
+    border-radius: 50px;
+    font-size: 12px;
 	color:#ffffff;
 	text-transform:capitalize;
 	margin-bottom:10px;
+}
+.prt_about_experience_info > a {
+    background: white;
+    margin-right: 10px;
+    padding: 5px 10px;
 }
 .prt_about_experience_info p{
 	margin:0px;
@@ -738,7 +777,7 @@ input:focus, textarea:focus, select:focus, button:focus {
     transition: all 0.3s;
 }
 .prt_profile_slider .item:hover i.pl_clr2{
-    color: #c82663;
+    color: #ff3800;
 	-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
@@ -910,7 +949,7 @@ input:focus, textarea:focus, select:focus, button:focus {
     transition: all 0.3s;
 }
 .prt_contact_details_box p a:hover{
-	color:#fd0c5d;
+	color:#ff3800;
 	-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
@@ -1131,7 +1170,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 .prt_counter_box p{
     font-size: 18px;
     margin-left: 80px;
-    color: #fd0c5d;
+    color: #ff3800;
 }
 .circles-text {
 	font-size: 36px !important;
@@ -1355,7 +1394,7 @@ input:focus, textarea:focus, select:focus, button:focus {
     padding-top: 5px;
 }
 .prt_footer_wrapper p a{
-	color:#fd0c5d;
+	color:#ff3800;
 	-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
@@ -1363,7 +1402,7 @@ input:focus, textarea:focus, select:focus, button:focus {
     transition: all 0.3s;
 }
 .prt_footer_wrapper p a:hover{
-	color:#fd0c5d;
+	color:#ff3800;
 	-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
@@ -1404,7 +1443,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 .prt_footer_wrapper ul li a:hover{
 	color:#ffffff;
-	background-color:#fd0c5d;
+	background-color:#ff3800;
 	-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;

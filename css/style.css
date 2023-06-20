@@ -238,11 +238,8 @@ input:focus, textarea:focus, select:focus, button:focus {
     text-align:center;
 }
 .prt_logo_wrapper > a > img{
-    position: ABSOLUTE;
-    left: 50px;
-    top: 50px;
-    z-index: 2;
-    max-width: 250px;
+    max-width: 372px;
+    padding: 20px;
 
 }
 .prt_logo_wrapper > div {
@@ -291,7 +288,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 .prt_close_wrapper img{
     position: fixed;
     right: 50px;
-    top: 50px;
+    top: 150px;
 	cursor:pointer;
 	z-index: 2;
 }

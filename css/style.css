@@ -136,7 +136,11 @@ input:focus, textarea:focus, select:focus, button:focus {
     -moz-transform: translate(-50%,-50%);
     -o-transform: translate(-50%,-50%);
 }
-#status img {
+#status p {
+    text-align: center;
+    width: 100%;
+    Color:white;
+    padding-top:10px;
 }
 /*---------- Heading Css Start -------*/
 .prt_heading_wrapper{
@@ -261,15 +265,15 @@ input:focus, textarea:focus, select:focus, button:focus {
     text-align:center;
 }
 .prt_logo_wrapper img{
-    position: fixed;
+    position: ABSOLUTE;
     left: 50px;
     top: 50px;
     z-index: 2;
-	-webkit-animation: rotate 2s linear infinite;
-	-moz-animation: rotate 2s linear infinite;
-	-o-animation: rotate 2s linear infinite;
-	-ms-animation: rotate 2s linear infinite;
-	animation: rotate 2s linear infinite;
+    max-width: 250px;
+
+}
+.prt_logo_wrapper {
+    z-index: 4;
 }
 @-webkit-keyframes rotate {
   100% {

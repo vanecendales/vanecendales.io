@@ -11,6 +11,7 @@ body {
 	display:none;
 }
 /*--------- Body End -------*/
+
 /*---------- Typography Css Start -------*/
 a {
 	color: #717171;
@@ -112,7 +113,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 /*---------- Preloader Css Start -------*/
 #preloader {
-	background-color: #ffffff;
+	background-color: #000000;
 	bottom: 0;
 	left: 0;
 	position: fixed;

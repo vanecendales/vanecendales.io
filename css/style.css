@@ -106,7 +106,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 	padding-bottom:100px;
 }
 .prt_bottompadder115 {
-    padding: 115px 0;
+    padding-bottom: 115px;
 }
 .prt_padderboth120{
 	padding:120px 0px;
@@ -241,6 +241,11 @@ input:focus, textarea:focus, select:focus, button:focus {
     max-width: 372px;
     padding: 20px;
 
+}
+
+.img-floating {
+    width: 100px;
+    margin-top: -40px;
 }
 .prt_logo_wrapper > div {
     text-align: right;

@@ -4,7 +4,7 @@ body {
 	font-size: 15px;
 	line-height: 1.5;
 	color: #717171;
-	background-color:#ffffff;
+	background-color:#ECECEC;
 	-webkit-font-smoothing: antialiased;
 }
 .typed-cursor{
@@ -105,8 +105,8 @@ input:focus, textarea:focus, select:focus, button:focus {
 .prt_bottompadder100{
 	padding-bottom:100px;
 }
-.prt_bottompadder115{
-	padding-bottom:115px;
+.prt_bottompadder115 {
+    padding: 115px 0;
 }
 .prt_padderboth120{
 	padding:120px 0px;
@@ -165,66 +165,36 @@ input:focus, textarea:focus, select:focus, button:focus {
 	font-weight:500;
 	padding-bottom:15px;
 }
-.prt_heading h1:after{
-	content:"";
-	position:absolute;
-	background-color:#202020;
-	width:100%;
-	height:2px;
-	top:100%;
-	left:0;
-}
+
 .prt_heading p{
     text-align: right;
     width: auto;
     text-transform: uppercase;
-    background-color: #ffffff;
     margin: 0px;
     padding-left: 10px;
     position: absolute;
     right: 0;
     bottom: -10px;
-	color:#f6483b;
+	color:#fc626a;
     font-weight: 500;
 }
 .prt_heading_wrapper_2{
-	text-align:left;
+	text-align:center;
 }
 .prt_heading_wrapper_2 .prt_heading{
 	margin-bottom:30px;
 }
 /*---------- Button css End -------*/
 .prt_btn{
-    height: 50px;
-    line-height: 50px;
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: 400;
+    color: #fd0c5d;
+    font-size: 13px;
+    font-weight: 800;
     border-radius: 0px;
-    padding: 0 20px;
-	min-width:140px;
     outline: none;
     cursor: pointer;
-    display: inline-block;
-	text-align:center;
-	text-transform:capitalize;
-	background-color:#f6483b;
-	border:1px solid #f6483b;
-	-webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
 }
 .prt_btn:hover, .prt_btn:focus{
-    color: #f6483b;
-    background-color: #ffffff;
-	border:1px solid #f6483b;
-	-webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
+
 }
 /*---------- Typography css End -------*/
 /*---------- Main Wrapper css Start -------*/
@@ -365,7 +335,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 /*---------- About css Start -------*/
 .prt_about_wrapper{
-    background-color: #ffffff;
+    background-color: #ECECEC;
     position: absolute;
     width: 100%;
 	top:-100%;
@@ -377,13 +347,64 @@ input:focus, textarea:focus, select:focus, button:focus {
 	width:100%;
 }
 .prt_about_img{
-	display:inline-block;
-	width:100%;
-	text-align:center;
+
+    border-radius: 30px;
+    overflow: hidden;
 }
 .prt_about_img img{
-	display:inline-block;
+	
 }
+/* ignore this bit, just some styling */
+
+.description ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .description li {
+    border-top:none!important;
+    display: block;
+    padding: .5em 1em;
+  }
+  li.button-pdf, :checked + ul > li.button-pdf {
+    display: grid!important;
+    grid-template-columns: 2.7fr 1fr;
+    align-items: start;
+}
+
+.description h4, .description h2 {
+    margin:0px;
+}
+  /* this is the clever bit :) */
+  
+  /* hide checkbox and links */
+  #show-more,
+  .toggle,
+  .toggle .more,
+  .toggle .less,
+  /* hide items 4+ */
+  li + li + li + li:not(.toggle),
+  /* if show more (checkbox checked) */
+  :checked + ul .toggle .more {
+    display: none;
+  }
+  
+  /* if 4+ items, display "show more" link */
+  li + li + li + li + .toggle {
+    display: block;
+  }
+  
+  /* if 4+ items or show more used */
+  li + li + li + li + .toggle .more,
+  :checked + ul .toggle .less {
+    display: inline;
+    pointer-events:none;
+  }
+  
+  /* if show more used, well, show more */
+  :checked + ul > li {
+    display: block !important;
+  }
 .prt_about_details{
 	display:inline-block;
 	width:100%;
@@ -447,7 +468,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 .prt_about_learnbox_right:hover:after{
 	background-color: #ffffff;
-    border: 3px solid #f6483b;
+    border: 3px solid #fd0c5d;
 	-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
@@ -485,7 +506,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 .prt_about_learnbox_left:hover:after{
 	background-color: #ffffff;
-    border: 3px solid #f6483b;
+    border: 3px solid #fd0c5d;
 	-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
@@ -493,7 +514,7 @@ input:focus, textarea:focus, select:focus, button:focus {
     transition: all 0.3s;
 }
 .prt_about_learnbox_right:hover .prt_about_learnbox_year h1{
-	color:#f6483b;
+	color:#fd0c5d;
 	-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
@@ -501,7 +522,7 @@ input:focus, textarea:focus, select:focus, button:focus {
     transition: all 0.3s;
 }
 .prt_about_learnbox_left:hover .prt_about_learnbox_year h1{
-	color:#f6483b;
+	color:#fd0c5d;
 	-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
@@ -571,9 +592,9 @@ input:focus, textarea:focus, select:focus, button:focus {
 .prt_about_learnbox_info span{
 	display:inline-block;
 	width:100%;
-	color:#ffffff;
 	text-transform:capitalize;
 	margin-bottom:10px;
+    font-weight: bolder;
 }
 .prt_about_learnbox_info p{
 	margin:0px;
@@ -623,7 +644,7 @@ input:focus, textarea:focus, select:focus, button:focus {
     transition: all 0.3s;
 }
 .prt_about_experiencebox:hover .prt_about_experience_year h1{
-	color:#f6483b;
+	color:#fd0c5d;
 	-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
@@ -883,7 +904,7 @@ input:focus, textarea:focus, select:focus, button:focus {
     transition: all 0.3s;
 }
 .prt_contact_details_box p a:hover{
-	color:#f6483b;
+	color:#fd0c5d;
 	-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
@@ -1104,7 +1125,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 .prt_counter_box p{
     font-size: 18px;
     margin-left: 80px;
-    color: #f6483b;
+    color: #fd0c5d;
 }
 .circles-text {
 	font-size: 36px !important;
@@ -1328,7 +1349,7 @@ input:focus, textarea:focus, select:focus, button:focus {
     padding-top: 5px;
 }
 .prt_footer_wrapper p a{
-	color:#f6483b;
+	color:#fd0c5d;
 	-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
@@ -1336,7 +1357,7 @@ input:focus, textarea:focus, select:focus, button:focus {
     transition: all 0.3s;
 }
 .prt_footer_wrapper p a:hover{
-	color:#f6483b;
+	color:#fd0c5d;
 	-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
@@ -1377,7 +1398,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 .prt_footer_wrapper ul li a:hover{
 	color:#ffffff;
-	background-color:#f6483b;
+	background-color:#fd0c5d;
 	-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;

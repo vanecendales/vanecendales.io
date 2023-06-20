@@ -234,7 +234,7 @@ input:focus, textarea:focus, select:focus, button:focus {
     background-size: cover;*/
     text-align:center;
 }
-.prt_logo_wrapper img{
+.prt_logo_wrapper > a > img{
     position: ABSOLUTE;
     left: 50px;
     top: 50px;
@@ -242,8 +242,14 @@ input:focus, textarea:focus, select:focus, button:focus {
     max-width: 250px;
 
 }
+.prt_logo_wrapper > div {
+    text-align: right;
+}
 .prt_logo_wrapper {
     z-index: 4;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    margin-bottom: 50px;
 }
 @-webkit-keyframes rotate {
   100% {

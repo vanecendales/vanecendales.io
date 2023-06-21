@@ -23,6 +23,17 @@
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css" />
 <!-- Favicon Link -->
 <link rel="shortcut icon" type="image/png" href="images/header/favicon.png">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1VT94DXGYL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1VT94DXGYL');
+</script>
+
 </head>
 <body>
 <!--Preloader Start-->
@@ -614,14 +625,16 @@
 <!--Portfolio Wrapper Start-->
 	<div class="prt_portfolio_wrapper">
 		<div class="prt_logo_wrapper">
-			<a><img src="images/header/logo.png" alt="Logo" id="prt_close_tab"></a>
+			<a><img src="images/header/logo.png" alt="Logo" id="prt_close_tab">
+				<div><img src="images/about/culebra-cara.svg" alt=""></div></a>
+
 			<div class="social-links">
 				<a href="https://www.behance.net/vanecendales" target="_blank"><i class="fa-brands fa-behance"></i></a>
 				<a href="https://www.linkedin.com/in/vanessa-cendales/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
 				<a href="http://vanecendales.github.io/vanecendales.io" target="_blank"><i class="fa-solid fa-id-card-clip"></i></a>
 				<a href="https://api.whatsapp.com/send?phone=573045678021" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
 			</div>
-			<div><img src="images/header/hand1.png" alt=""></div>
+			<div><img src="images/about/culebra-cola.svg" alt=""></div>
 		</div>
 		<div class="prt_close_wrapper">
 			<img src="images/header/left_arrow.png" alt="Close" class="prt_close">
@@ -692,8 +705,56 @@
             'expandingSpeed': 500,
             'expandingHeight': 500,
             'items' :
-            [
-                {
+            [ 
+				{
+                    'title'         : 'Rogans - Wordpress Develop',
+                    'description'   : 'web application for messaging and projects managment,  with a fiscal nature. focused on the construction area. as a hook it has the function of review mode for tax audits',
+                    'thumbnail'     : ['images/portfolio/small/iris/1.jpg','images/portfolio/small/iris/2.jpg', 'images/portfolio/small/iris/3.jpg', 'images/portfolio/small/iris/4.jpg'],
+                    'large'         : ['images/portfolio/large/iris/1.jpg', 'images/portfolio/large/iris/2.jpg', 'images/portfolio/large/iris/3.jpg','images/portfolio/large/iris/4.jpg'],
+                    'img_title'     : ['iris1', 'iris2', 'iris3', 'iris'],
+                    'button_list'   :
+                    [
+                        { 'title':'Demo', 'url' : 'https://www.behance.net/gallery/133986905/IRIS', 'new_window' : true },
+                    ],
+                    'tags'          : ['HTML & CSS3', 'Javascript', ,'UI Design']
+                },  
+				{
+                    'title'         : 'React test - Onepage App',
+                    'description'   : 'web application for messaging and projects managment,  with a fiscal nature. focused on the construction area. as a hook it has the function of review mode for tax audits',
+                    'thumbnail'     : ['images/portfolio/small/iris/1.jpg','images/portfolio/small/iris/2.jpg', 'images/portfolio/small/iris/3.jpg', 'images/portfolio/small/iris/4.jpg'],
+                    'large'         : ['images/portfolio/large/iris/1.jpg', 'images/portfolio/large/iris/2.jpg', 'images/portfolio/large/iris/3.jpg','images/portfolio/large/iris/4.jpg'],
+                    'img_title'     : ['iris1', 'iris2', 'iris3', 'iris'],
+                    'button_list'   :
+                    [
+                        { 'title':'Demo', 'url' : 'https://www.behance.net/gallery/133986905/IRIS', 'new_window' : true },
+                    ],
+                    'tags'          : ['Figma', 'UI Design']
+                },  
+				{
+                    'title'         : 'Megans  - Iconography',
+                    'description'   : 'web application for messaging and projects managment,  with a fiscal nature. focused on the construction area. as a hook it has the function of review mode for tax audits',
+                    'thumbnail'     : ['images/portfolio/small/megans/1.jpg','images/portfolio/small/megans/2.jpg', 'images/portfolio/small/megans/3.jpg', 'images/portfolio/small/megans/4.jpg'],
+                    'large'         : ['images/portfolio/large/megans/1.jpg', 'images/portfolio/large/megans/2.jpg', 'images/portfolio/large/megans/3.jpg','images/portfolio/large/megans/4.jpg'],
+                    'img_title'     : ['megans1', 'megans2', 'megans3', 'megans'],
+                    'button_list'   :
+                    [
+                        { 'title':'Demo', 'url' : 'https://www.behance.net/gallery/133986905/IRIS', 'new_window' : true },
+                    ],
+                    'tags'          : ['Figma','Iconography' ,'UI Design']
+                },  
+            {
+                    'title'         : 'IRIS - Web App',
+                    'description'   : 'web application for messaging and projects managment,  with a fiscal nature. focused on the construction area. as a hook it has the function of review mode for tax audits',
+                    'thumbnail'     : ['images/portfolio/small/iris/1.jpg','images/portfolio/small/iris/2.jpg', 'images/portfolio/small/iris/3.jpg', 'images/portfolio/small/iris/4.jpg'],
+                    'large'         : ['images/portfolio/large/iris/1.jpg', 'images/portfolio/large/iris/2.jpg', 'images/portfolio/large/iris/3.jpg','images/portfolio/large/iris/4.jpg'],
+                    'img_title'     : ['iris1', 'iris2', 'iris3', 'iris'],
+                    'button_list'   :
+                    [
+                        { 'title':'Demo', 'url' : 'https://www.behance.net/gallery/133986905/IRIS', 'new_window' : true },
+                    ],
+                    'tags'          : ['Figma', ,'UI Design']
+                },    
+			{
                     'title'         : 'VaneCendales - Older Porfolio',
                     'description'   : 'Portfolio builded in Angular 2.0, SASS and HTML.',
                     'thumbnail'     : ['images/portfolio/small/older-0/0.jpg', 'images/portfolio/small/older-0/1.jpg', 'images/portfolio/small/older-0/2.jpg'],
@@ -704,19 +765,7 @@
                         { 'title':'View Portofolio', 'url' : 'https://vanecendales.github.io/vanecendales.io/anterior-0/', 'new_window' : true }
                       
                     ],
-                    'tags'          : ['HTML & CSS3', 'SASS', 'Angular', 'Branding','jQuery']
-                },
-				{
-                    'title'         : 'Internexa - Web Portal',
-                    'description'   : 'UI & UX Design for INTERNEXA-COLOMBIA, layout in HTML, Less and javascript.',
-                    'thumbnail'     : ['images/portfolio/small/internexa/1.jpg','images/portfolio/small/internexa/2.jpg', 'images/portfolio/small/internexa/3.jpg', 'images/portfolio/small/internexa/4.jpg'],
-                    'large'         : ['images/portfolio/large/internexa/1.jpg', 'images/portfolio/large/internexa/2.jpg', 'images/portfolio/large/internexa/3.jpg','images/portfolio/large/internexa/4.jpg'],
-                    'img_title'     : ['internexa1', 'internexa2', 'internexa3', 'internexa', 'internexa'],
-                    'button_list'   :
-                    [
-                        { 'title':'Demo', 'url' : 'https://www.behance.net/gallery/105391759/internexa', 'new_window' : true },
-                    ],
-                    'tags'          : ['HTML & CSS3', 'Javascript', ,'UI Design']
+                    'tags'          : ['HTML & CSS3', 'SASS', 'Angular','jQuery']
                 },
                  {
                     'title'         : 'VaneCendales - Older Porfolio',
@@ -729,7 +778,7 @@
                         { 'title':'View Portofolio', 'url' : 'https://vanecendales.github.io/vanecendales.io/anterior-1/', 'new_window' : true }
                       
                     ],
-                    'tags'          : ['HTML & CSS3', 'Javasript','jQuery']
+                    'tags'          : ['HTML & CSS3', 'Javascript','jQuery']
                 },
                 {
                     'title'         : 'Eduac - Web App',
@@ -742,7 +791,7 @@
                         { 'title':'View Prject', 'url' : 'https://www.behance.net/gallery/105393983/EDUAC/', 'new_window' : true }
                       
                     ],
-                    'tags'          : ['HTML & CSS3', 'Javascript', 'WordPress', 'Branding','UI Design']
+                    'tags'          : ['HTML & CSS3', 'Vue', 'UI Design']
                 },
 				
                 {
@@ -768,7 +817,7 @@
                         { 'title':'Demo', 'url' : 'https://www.behance.net/gallery/105391175/duomarketing', 'new_window' : true }
                      
                     ],
-                    'tags'          : ['HTML & CSS3', 'Javascript', 'WordPress', 'Branding','UI Design']
+                    'tags'          : ['WordPress','UI Design']
                 },
                 {
                     'title'         : 'S&S Transport - Wordpress Site',
@@ -792,7 +841,7 @@
                     [
                         { 'title':'Visit Site', 'url' : 'https://www.lifeafarinvestments.com/sales/', 'new_window' : true },
                     ],
-                    'tags'          : ['HTML & CSS3', 'Web Design','WordPress', 'Javascript', 'MailChimp', 'liquid']
+                    'tags'          : ['HTML & CSS3', 'Web Design','WordPress', 'Javascript']
                 },
                 {
                     'title'         : 'Medellin.travel',
@@ -818,7 +867,7 @@
                         { 'title':'Demo', 'url' : 'https://www.behance.net/gallery/105593985/IOS-APP-financial-project-UP-DRAFT', 'new_window' : true },
               
                     ],
-                    'tags'          : ['SWIFT', 'IOS Mobile']
+                    'tags'          : ['App Design', 'Sketch']
                 }, 
                 {
                     'title'         : 'Si y Si Logo',

@@ -113,23 +113,23 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 /*---------- Preloader Css Start -------*/
 #preloader {
-	background-color: #000000;
-	bottom: 0;
-	left: 0;
-	position: fixed;
-	right: 0;
-	top: 0;
-	z-index: 2147483647;
-	width: 100%;
-	height: 100%;
+    background-color: #000000;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 2147483647;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #status {
     background-position: center center;
     background-repeat: no-repeat;
     height: auto;
-    position: absolute;
-    left: 50%;
-    top: 50%;
 }
 #status p {
     text-align: center;
@@ -407,7 +407,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 .description h4, .description h2 {
     margin:0px;
 }
-  
+
   /* hide checkbox and links */
   #show-more,
   .toggle,
@@ -968,7 +968,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 /*---------- Services css Start -------*/
 .prt_services_wrapper{
-    background-color: #ffffff;
+    background-color: #ECECEC;;
     position: absolute;
     width: 100%;
     top: 100%;
@@ -1268,13 +1268,16 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 /*---------- Portfolio css Start -------*/
 .prt_portfolio_wrapper{
-    background-color: #ffffff;
+    background-color: #ECECEC;
     position: absolute;
     right: 100%;
     width: 100%;
     top: 0;
     z-index: 1;
     display: none;
+}
+.og-grid li {
+    display: inline-block!important;
 }
 .prt_loadmore{
 	display:none;

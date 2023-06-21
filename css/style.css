@@ -382,7 +382,10 @@ input:focus, textarea:focus, select:focus, button:focus {
 	
 }
 
-
+.boca {
+    max-width: 285px;
+    margin: 0 auto;
+}
 .description ul {
     list-style: none;
     padding: 0;

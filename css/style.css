@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 /*--------- Body Strat -------*/
 body {
-	font-family: 'Montserrat', sans-serif;
+    font-family: 'Anonymous Pro', monospace;
 	font-size: 15px;
 	line-height: 1.5;
 	color: #717171;
@@ -1059,11 +1061,8 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 .prt_services_slider_text{
 	float:left;
-	width:50%;
 	text-align:center;
 	overflow:hidden;
-	height:175px;
-	margin-bottom:30px;
 	cursor:pointer;
 	-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -1071,15 +1070,7 @@ input:focus, textarea:focus, select:focus, button:focus {
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
-.prt_services_slider_text:hover img, .prt_services_slider_text.active img{
-	width:86px;
-	height:100px;
-	-webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-}
+
 .prt_services_slider_text img{
 	display:inline-block;
 	width:60px;
@@ -1091,8 +1082,9 @@ input:focus, textarea:focus, select:focus, button:focus {
     transition: all 0.3s;
 }
 .prt_services_slider_text h4{
+    font-family:'Anonymus Pro', monospace;
 	text-transform:capitalize;
-	font-size:18px;
+	font-size:14px;
 	margin-bottom:0px;
 	margin-top:20px;
 	-webkit-transition: all 0.3s;
@@ -1100,32 +1092,33 @@ input:focus, textarea:focus, select:focus, button:focus {
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
+    font-weight: 900;
 }
-.prt_services_slider_text:hover h4, .prt_services_slider_text.active h4{
-	margin-top:30px;
-	-webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-}
+
 .prt_services_slider_text:hover p, .prt_services_slider_text.active p{
-	opacity:0;
-	visibility:hidden;
+	opacity:1;
+	visibility:visible;
 	-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
+	margin-bottom:30px;
 }
 .prt_services_slider_text p{
 	margin-bottom:0px;
-	margin-top:20px;
+	margin-top:0px;
 	-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
+    opacity:0;
+	visibility:hidden;
+}
+.prt_services_slider_text.prt_img_click p {
+    font-size: 12px;
+    line-height: 16px;
 }
 .prt_couter_wrapper{
     display: inline-block;

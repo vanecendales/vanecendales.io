@@ -367,7 +367,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 	top:45px;
 	left:0px;
 	right:0px;
-	width:100px;
+	width:160px;
 }
 .prt_menu_wrapper a.prt_bottom{
 	bottom:45px;
@@ -1478,6 +1478,15 @@ input:focus, textarea:focus, select:focus, button:focus {
     display: none;
 }
 /*---------- Main Wrapper css End -------*/
+.lang {
+    width: 50px;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}
+.lang_int {
+    width: 52px;
+}
 /*---------- Responsive css Start -------*/
 @media (min-width: 992px) and (max-width: 1199px) {
 .prt_counter_box {

@@ -1474,6 +1474,9 @@ input:focus, textarea:focus, select:focus, button:focus {
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
+.wagwep-container {
+    display: none;
+}
 /*---------- Main Wrapper css End -------*/
 /*---------- Responsive css Start -------*/
 @media (min-width: 992px) and (max-width: 1199px) {

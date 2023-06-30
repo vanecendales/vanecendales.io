@@ -428,7 +428,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
   li.button-pdf, :checked + ul > li.button-pdf {
     display: grid!important;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2fr 1.1fr;
     align-items: start;
 }
 

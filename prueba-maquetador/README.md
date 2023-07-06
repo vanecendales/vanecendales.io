@@ -1,2 +1,0 @@
-# prueba-maquetador vanessa cendales
- 

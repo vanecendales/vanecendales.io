@@ -1477,6 +1477,8 @@ input:focus, textarea:focus, select:focus, button:focus {
 .wagwep-container {
     display: none;
 }
+
+/*study cases*/
 .studycases{
     margin-top:100px
 }
